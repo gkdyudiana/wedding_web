@@ -14,116 +14,14 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="<?= CSS; ?>/invitation.css">
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
-    <style>
-        body,
-        html {
-            font-family: 'Roboto', sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        .nav-link {
-            text-transform: uppercase;
-            margin-right: 10px;
-        }
-
-        .navbar-brand,
-        .text-head {
-            font-family: 'Lobster', cursive;
-        }
-
-        .jumbotron {
-            border-radius: 0 !important;
-            height: 100%;
-            background: url('../public/assets/images/banner.png');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .jumbotron img {
-            width: 95%;
-            height: 100%;
-            display: block;
-            margin: auto;
-        }
-
-        .photos {
-            width: 100px;
-            display: block;
-            margin: auto;
-            border-radius: 5px;
-            margin-right: 20px;
-            box-shadow: 0px 10px 27px 3px rgba(204, 204, 204, 0.2);
-        }
-
-        .card-wrapper {
-            width: 100%;
-            height: 100%;
-            border: 2px solid #f5f5f5;
-            border-radius: 5px;
-        }
-
-        .timer {
-            width: 100%;
-            height: 150px;
-            margin-bottom: 30px;
-            font-size: 40px;
-            border-radius: 5px;
-            background-color: #fff;
-            padding-top: 50px;
-            box-shadow: 0px 10px 27px 3px rgba(204, 204, 204, 0.2);
-        }
-
-        .card-name {
-            font-family: 'Pacifico', cursive;
-        }
-
-        .scroll-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: block;
-            cursor: pointer;
-        }
-
-        /* Desktop */
-        @media (min-width: 992px) {
-
-            .navbar-brand {
-                font-size: 30px;
-            }
-
-            .navbar-brand,
-            .nav-link {
-                color: #fff !important;
-            }
-
-            .nav-link:hover::after {
-                content: '';
-                display: block;
-                border-bottom: 2px solid #fff;
-                width: 30px;
-                margin: auto;
-                margin-top: 6px;
-                margin-bottom: -8px;
-            }
-
-            .jumbotron {
-                margin-top: -72px;
-                width: 100%;
-                height: 640px;
-            }
-
-            .jumbotron img {
-                width: 80%;
-                height: 90%;
-            }
-        }
-    </style>
+    <title>Welcome, <?= $_SESSION['auth']['visitor']; ?></title>
 </head>
 
 <body>
@@ -132,11 +30,11 @@
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Dika's Wedding</a>
+            <a class="navbar-brand" data-aos="fade-right" data-aos-duration="2000" href="#">Dika's Wedding</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav" data-aos="fade-left" data-aos-duration="3000">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" id="home" href="#">Home <span class="sr-only">(current)</span></a>
@@ -153,6 +51,9 @@
                     <li class="nav-item">
                         <a class="nav-link" id="location" href="#">Location</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="<?= BASEURL; ?>/auth/logout" class="btn btn-danger rounded-pill">SIGN OUT</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -164,7 +65,7 @@
     <!-- Start Jumbotron -->
 
     <div class="jumbotron">
-        <img src="../public/assets/images/text-design.png" alt="" data-aos="fade-up" data-aos-duration="2000">
+        <img src="../public/assets/images/text-design.png" alt="" data-aos="fade-up" data-aos-duration="3000">
     </div>
 
     <!-- End Jumbotron -->
@@ -172,7 +73,7 @@
     <!-- Start Profile -->
 
     <div class="container mb-5 mt-5">
-        <h2 class="text-center mb-5 text-head"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-badge" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <h2 class="text-center mb-5 text-head" data-aos="fade-right" data-aos-duration="2000"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-badge" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M12 1H4a1 1 0 0 0-1 1v11.755S4 12 8 12s5 1.755 5 1.755V2a1 1 0 0 0-1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
                 <path fill-rule="evenodd" d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5z" />
             </svg>&nbsp;Profiles</h2>
@@ -203,7 +104,7 @@
     <!-- Start Galery -->
 
     <div class="container bg-light text-center pt-5">
-        <h2 class="text-center mb-5 text-dark text-head"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-images" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <h2 class="text-center mb-5 text-dark text-head" data-aos-duration="2000" data-aos="zoom-in"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-images" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M12.002 4h-10a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zm-10-1a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-10z" />
                 <path d="M10.648 8.646a.5.5 0 0 1 .577-.093l1.777 1.947V14h-12v-1l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71z" />
                 <path fill-rule="evenodd" d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM4 2h10a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1v1a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2h1a1 1 0 0 1 1-1z" />
@@ -302,92 +203,10 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="<?= JS; ?>/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-    <script>
-        $(document).ready(function() {
-            AOS.init();
-
-            // Set the date we're counting down to
-            var countDownDate = new Date("Jan 01, 2021 08:00:00").getTime();
-
-            // Update the count down every 1 second
-            var x = setInterval(function() {
-
-                // Get today's date and time
-                var now = new Date().getTime();
-
-                // Find the distance between now and the count down date
-                var distance = countDownDate - now;
-
-                // Time calculations for days, hours, minutes and seconds
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                document.getElementById("days").innerHTML = days + " D";
-                document.getElementById("hours").innerHTML = hours + " H";
-                document.getElementById("minutes").innerHTML = minutes + " M";
-                document.getElementById("seconds").innerHTML = seconds + " S";
-
-                // If the count down is over, write some text 
-                if (distance <= 0) {
-                    clearInterval(x);
-                    document.getElementById("days").innerHTML = "0";
-                    document.getElementById("hours").innerHTML = "0";
-                    document.getElementById("minutes").innerHTML = "0";
-                    document.getElementById("seconds").innerHTML = "0";
-                    document.getElementById("finish").innerHTML = "Congratulations! Wedding Day!";
-                }
-            }, 1000);
-
-            // $(window).scroll(function() {
-            //     console.log($(window).scrollTop());
-            // });
-
-            $('.scroll-top').fadeOut();
-            $(window).scroll(function() {
-                if ($(window).scrollTop() >= 640) {
-                    $('.scroll-top').fadeIn();
-                } else {
-                    $('.scroll-top').fadeOut();
-                }
-            });
-
-            $('.scroll-top').click(function() {
-                $('html, body').animate({
-                    scrollTop: '0'
-                });
-            });
-
-            $('#profile').click(function() {
-                $("html, body").animate({
-                    scrollTop: '640'
-                });
-            });
-
-            $('#gallery').click(function() {
-                $('html, body').animate({
-                    scrollTop: '1024'
-                });
-            });
-
-            $('#party').click(function() {
-                $('html, body').animate({
-                    scrollTop: '2080'
-                });
-            });
-
-            $('#location').click(function() {
-                $('html, body').animate({
-                    scrollTop: '2495'
-                });
-            });
-        });
-    </script>
 
 </body>
 

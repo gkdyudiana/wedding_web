@@ -8,48 +8,16 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="<?= CSS; ?>/verify.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
-    <style>
-        body,
-        html {
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
+    <title>Verify</title>
 
-        .container {
-            width: 300px;
-            /* margin-left: auto; */
-            transform: translate(0, 200px);
-            padding: 10px;
-            background-color: #fff;
-            box-shadow: 2px 2px 2px #acacac;
-            border-radius: 5px;
-        }
-
-        .form-control {
-            text-transform: uppercase;
-        }
-
-        .container h2 {
-            font-family: 'Lobster', cursive;
-            font-size: 40px;
-            text-align: center;
-            padding-top: 10px;
-            padding-bottom: 15px;
-        }
-
-        /* Desktop */
-        @media (min-width: 992px) {
-            .container {
-                width: 400px;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -69,27 +37,29 @@
     }
     ?>
 
-    <div class="container">
-        <h2>Dika's Wedding</h2>
-        <form action="<?= BASEURL; ?>/auth/middleware" method="POST" id="my-form" class="my-form">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text bg-dark text-white" id="validatedInputGroupPrepend">Access Code</span>
+
+    <div class="container px-4 py-5 mx-auto">
+        <div class="card card0">
+            <div class="d-flex flex-lg-row flex-column-reverse">
+                <div class="card card1">
+                    <div class="row justify-content-center my-auto">
+                        <div class="col-lg-11 my-4">
+                            <h2 class="mb-5 text-center heading">Dika's Wedding</h2>
+                            <form action="<?= BASEURL; ?>/auth/middleware" method="POST" id="my-form">
+                                <div class="form-group"> <label class="form-control-label text-muted">Name</label> <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required> </div>
+                                <div class="form-group"> <label class="form-control-label text-muted">Access Code</label> <input type="text" id="code" name="code" class="form-control" placeholder="Access code" required> </div>
+                                <div class="row justify-content-center my-3 px-3"> <button class="btn-block btn-color" name="submit">Verify me</button> </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <input type="text" name="code" class="form-control" aria-describedby="validatedInputGroupPrepend" required>
-                <input type="submit" name="submit" value="Verify" class="btn btn-block btn-dark mt-2">
+                <div class="card card2">
+                </div>
             </div>
-            <?php
-            if (isset($_SESSION['failed'])) {
-            ?>
-                <div class="invalid-feedback text-center">
-                    Wrong Code!
-                </div>
-            <?php
-                unset($_SESSION['failed']);
-            } ?>
-        </form>
+        </div>
     </div>
+
+
 
 
     <!-- Optional JavaScript -->

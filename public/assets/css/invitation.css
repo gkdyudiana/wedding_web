@@ -1,0 +1,110 @@
+body,
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.navbar-brand,
+.text-head {
+    font-family: 'Lobster', cursive;
+}
+
+.jumbotron {
+    border-radius: 0 !important;
+    height: 100%;
+    background: url('../images/banner.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbotron img {
+    width: 95%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.photos {
+    width: 100px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+    box-shadow: 0px 10px 27px 3px rgba(204, 204, 204, 0.2);
+}
+
+.card-wrapper {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #f5f5f5;
+    border-radius: 5px;
+}
+
+.timer {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding-top: 50px;
+    box-shadow: 0px 10px 27px 3px rgba(204, 204, 204, 0.2);
+}
+
+.card-name {
+    font-family: 'Pacifico', cursive;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+iframe {
+    box-shadow: 0px 10px 27px 3px rgba(204, 204, 204, 0.2);
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+
+    .navbar-brand {
+        font-size: 30px !important;
+    }
+
+    .navbar-brand,
+    .nav-link {
+        color: #fff !important;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 2px solid #fff;
+        width: 30px;
+        margin: auto;
+        margin-top: 6px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        margin-top: -72px;
+        width: 100%;
+        height: 700px;
+        overflow-x: hidden;
+    }
+
+    .jumbotron img {
+        width: 60%;
+        height: 60%;
+        position: relative;
+        top: 90px;
+    }
+}
