@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     AOS.init();
 
     // Set the date we're counting down to
@@ -35,10 +36,6 @@ $(document).ready(function () {
         }
     }, 1000);
 
-    // $(window).scroll(function() {
-    //     console.log($(window).scrollTop());
-    // });
-
     $('.scroll-top').fadeOut();
     $(window).scroll(function () {
         if ($(window).scrollTop() >= 640) {
@@ -48,6 +45,12 @@ $(document).ready(function () {
         }
     });
 
+    $('#home').click(function () {
+        $('html, body').animate({
+            scrollTop: '0'
+        });
+    });
+
     $('.scroll-top').click(function () {
         $('html, body').animate({
             scrollTop: '0'
@@ -55,26 +58,26 @@ $(document).ready(function () {
     });
 
     $('#profile').click(function () {
-        $("html, body").animate({
-            scrollTop: '640'
-        });
+        $('html, body').animate({
+            scrollTop: ($('#section-profile').offset().top - 30)
+        }, 300);
     });
 
     $('#gallery').click(function () {
         $('html, body').animate({
-            scrollTop: '1024'
-        });
+            scrollTop: ($('#section-gallery').offset().top)
+        }, 300);
     });
 
     $('#party').click(function () {
         $('html, body').animate({
-            scrollTop: '2080'
-        });
+            scrollTop: ($('#section-party').offset().top - 40)
+        })
     });
 
     $('#location').click(function () {
         $('html, body').animate({
-            scrollTop: '2495'
-        });
+            scrollTop: ($('#section-location').offset().top)
+        })
     });
 });
