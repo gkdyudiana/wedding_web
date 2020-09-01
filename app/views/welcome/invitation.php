@@ -79,20 +79,20 @@
                     <path fill-rule="evenodd" d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5z" />
                 </svg>&nbsp;Profiles</h2>
             <div class="row justify-content-center text-center">
-                <div class="col-md-4 mb-3" data-aos="fade-right" data-aos-duration="2000">
+                <div class="col-md-5 mb-3" data-aos="fade-right" data-aos-duration="2000">
                     <div class="row">
                         <div class="col">
                             <img class="photos float-left" src="../public/assets/images/profile1.jpg" alt="">
-                            <h3 class="text-left">Gung Prihandika</h3>
+                            <h3 class="text-left">Anak Agung Ngurah Prihandhika</h3>
                             <p class="text-left text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3" data-aos="fade-left" data-aos-duration="2000">
+                <div class="col-md-5 mb-3" data-aos="fade-left" data-aos-duration="2000">
                     <div class="row">
                         <div class="col">
                             <img class="photos float-left" src="../public/assets/images/profile2.jpg" alt="">
-                            <h3 class="text-left">Dika Desiyani</h3>
+                            <h3 class="text-left">Gusti Ayu Putu Dika Desiyani</h3>
                             <p class="text-left text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                         </div>
                     </div>
@@ -139,8 +139,8 @@
     <!-- Start Party -->
 
     <section id="section-party">
-        <div class="container" data-aos="fade-down" data-aos-duration="2000">
-            <h2 class="text-center mt-5 mb-5 text-head"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar2-event-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <div class="container mt-5" data-aos="fade-down" data-aos-duration="2000">
+            <h2 class="text-center mb-5 text-head"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar2-event-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M14 2H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z" />
                     <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z" />
                     <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z" />
@@ -148,8 +148,8 @@
                 </svg>&nbsp;Our Party</h2>
 
             <div class="card-wrapper bg-light text-center">
-                <h1 class="pt-3 card-name">Gung Dika & Dika Desiyani</h1>
-                <p>Are getting married at Desa Yehsumbul, Come away with us to celebrate</p>
+                <h1 class="pt-4 pb-3 card-name">Anak Agung Ngurah Prihandhika <br> & <br> <span class="sub-card-name">Gusti Ayu Putu Dika Desiyani</span></h1>
+                <p>Are getting married at Desa Yehsumbul, Come away with us to celebrate.</p>
                 <p><strong>01 January 2021, 08:00 AM</strong></p>
                 <div class="row justify-content-center">
                     <div class="col-md-2">
