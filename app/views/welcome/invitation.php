@@ -78,22 +78,32 @@
                     <path fill-rule="evenodd" d="M12 1H4a1 1 0 0 0-1 1v11.755S4 12 8 12s5 1.755 5 1.755V2a1 1 0 0 0-1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
                     <path fill-rule="evenodd" d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5z" />
                 </svg>&nbsp;Profiles</h2>
-            <div class="row justify-content-center text-center">
-                <div class="col-md-5 mb-3" data-aos="fade-right" data-aos-duration="2000">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 mb-3" data-aos="fade-right" data-aos-duration="2000">
                     <div class="row">
                         <div class="col">
                             <img class="photos float-left" src="../public/assets/images/profile1.jpg" alt="">
-                            <h3 class="text-left">Anak Agung Ngurah Prihandhika</h3>
-                            <p class="text-left text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            <section class="section-text d-flex flex-column" style="height: 300px;">
+                                <h3 class="text-left">Anak Agung Ngurah Prihandhika</h3>
+                                <p class="text-left text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                <a href="#" class="btn btn-info btn-read">Read more <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg></a>
+                            </section>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 mb-3" data-aos="fade-left" data-aos-duration="2000">
+                <div class="col-lg-5 mb-3" data-aos="fade-left" data-aos-duration="2000">
                     <div class="row">
                         <div class="col">
                             <img class="photos float-left" src="../public/assets/images/profile2.jpg" alt="">
-                            <h3 class="text-left">Gusti Ayu Putu Dika Desiyani</h3>
-                            <p class="text-left text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            <section class="section-text d-flex flex-column" style="height: 300px;">
+                                <h3 class="text-left">Gusti Ayu Putu Dika Desiyani</h3>
+                                <p class="text-left text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                <a href="#" class="btn btn-info btn-read">Read more <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    </svg></a>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -152,16 +162,16 @@
                 <p>Are getting married at Desa Yehsumbul, Come away with us to celebrate.</p>
                 <p><strong>01 January 2021, 08:00 AM</strong></p>
                 <div class="row justify-content-center">
-                    <div class="col-md-2">
+                    <div class="col-lg-2">
                         <h2 id="days" class="timer"></h2>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2">
                         <h2 id="hours" class="timer"></h2>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2">
                         <h2 id="minutes" class="timer"></h2>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-lg-2">
                         <h2 id="seconds" class="timer"></h2>
                     </div>
                 </div>
@@ -181,10 +191,10 @@
                     <path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                 </svg>&nbsp;Our Wedding Location</h2>
             <div class="row justify-content-center">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.189969798888!2d115.20206680865591!3d-8.673476680134074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwNDAnMjQuNSJTIDExNcKwMTInMTMuOSJF!5e0!3m2!1sid!2sid!4v1598607743982!5m2!1sid!2sid" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d986.763022846822!2d114.80097682915932!3d-8.39653767289266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMjMnNDcuNSJTIDExNMKwNDgnMDUuNSJF!5e0!3m2!1sid!2sid!4v1598606842615!5m2!1sid!2sid" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
