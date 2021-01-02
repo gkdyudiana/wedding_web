@@ -9,6 +9,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
     <!-- Personal CSS -->
     <link rel="stylesheet" href="<?= CSS; ?>/verify.css">
@@ -57,7 +59,7 @@
                 </div>
             </div>
         </div>
-        <p class="pt-5 text-center text-muted">Use desktop version to best experience.</p>
+        <p class="pt-5 text-center text-muted">Use desktop version for best experience.</p>
     </div>
 
 

@@ -11,7 +11,8 @@ html {
 
 .navbar-brand,
 .text-head {
-    font-family: 'Lobster', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
 }
 
 .jumbotron {
@@ -54,10 +55,12 @@ html {
     background-color: #fff;
     padding-top: 50px;
     box-shadow: 0px 10px 27px 3px rgba(204, 204, 204, 0.2);
+    font-family: 'Lora', serif;
 }
 
 .card-name {
-    font-family: 'Pacifico', cursive;
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Lora', serif;
     font-size: 45px;
 }
 
