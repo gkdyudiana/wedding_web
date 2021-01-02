@@ -46,8 +46,8 @@
                         <div class="col-lg-11 my-4">
                             <h2 class="mb-5 text-center heading">Dika's Wedding</h2>
                             <form action="<?= BASEURL; ?>/auth/middleware" method="POST" id="my-form">
-                                <div class="form-group"> <label class="form-control-label text-muted">Name</label> <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required> </div>
-                                <div class="form-group"> <label class="form-control-label text-muted">Access Code</label> <input type="text" id="code" name="code" class="form-control" placeholder="Access code" required> </div>
+                                <div class="form-group"> <label class="form-control-label text-muted">Name</label> <input type="text" id="name" name="name" class="form-control" required> </div>
+                                <div class="form-group"> <label class="form-control-label text-muted">Access Code</label> <input type="text" id="code" name="code" class="form-control text-uppercase" required> </div>
                                 <div class="row justify-content-center my-3 px-3"> <button class="btn-block btn-color" name="submit">Verify me</button> </div>
                             </form>
                         </div>
@@ -57,6 +57,7 @@
                 </div>
             </div>
         </div>
+        <p class="pt-5 text-center text-muted">Use desktop version to best experience.</p>
     </div>
 
 

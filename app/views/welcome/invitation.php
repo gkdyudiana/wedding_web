@@ -159,8 +159,8 @@
 
             <div class="card-wrapper bg-light text-center">
                 <h1 class="pt-4 pb-3 card-name">Anak Agung Ngurah Prihandhika <br> & <br> <span class="sub-card-name">Gusti Ayu Putu Dika Desiyani</span></h1>
-                <p>Are getting married at Desa Yehsumbul, Come away with us to celebrate.</p>
-                <p><strong>01 January 2021, 08:00 AM</strong></p>
+                <p>Are getting married , Come away with us to celebrate.</p>
+                <p class="text-danger"><strong>14 January 2021, 13:00 - 20:00 WITA</strong></p>
                 <div class="row justify-content-center">
                     <div class="col-lg-2">
                         <h2 id="days" class="timer"></h2>
@@ -191,11 +191,8 @@
                     <path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                 </svg>&nbsp;Our Wedding Location</h2>
             <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.189969798888!2d115.20206680865591!3d-8.673476680134074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwNDAnMjQuNSJTIDExNcKwMTInMTMuOSJF!5e0!3m2!1sid!2sid!4v1598607743982!5m2!1sid!2sid" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-                <div class="col-lg-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d986.763022846822!2d114.80097682915932!3d-8.39653767289266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMjMnNDcuNSJTIDExNMKwNDgnMDUuNSJF!5e0!3m2!1sid!2sid!4v1598606842615!5m2!1sid!2sid" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div class="col-lg">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d293.1608745571641!2d115.20758194769324!3d-8.66424563641277!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240bc6dee7cf5%3A0x6d840ab93d175570!2sBanjar%20Tegal%20Agung!5e0!3m2!1sid!2sid!4v1607235760371!5m2!1sid!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
         </div>

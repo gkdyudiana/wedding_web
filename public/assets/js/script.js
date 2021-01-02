@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     AOS.init();
 
-    var countDownDate = new Date("Jan 01, 2021 08:00:00").getTime();
+    var countDownDate = new Date("Jan 14, 2021 13:00:00").getTime();
 
 
     var x = setInterval(function () {
